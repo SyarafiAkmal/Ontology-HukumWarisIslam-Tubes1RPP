@@ -1,0 +1,72 @@
+{
+    "Name" : "Muhammad Syarafi Akmal",
+    "Gender" : "Male",
+    "Spouse": {
+        "Name": "Ibrahim Ihsan Rasyid",
+        "Gender": "Female"
+    },
+    "Descendents": [
+        {
+            "Name": "Megawati Akmalnoputri",
+            "Gender": "Female",
+            "Lineage": "Maternal",
+            "Spouse": {
+                "Name": "Zaki Yudistira",
+                "Gender": "Male"
+            }
+        },
+        {
+            "Name": "Mulyono Widodo",
+            "Gender": "Male",
+            "Lineage": "Paternal",
+            "Spouse": {
+                "Name": "Bagas Sambega Rosyada",
+                "Gender": "Female"
+            },
+            "Descendents": [
+                {
+                    "Name": "Gibran Rakabuming Raka",
+                    "Gender": "Male",
+                    "Lineage": "Paternal"
+                },
+                {
+                    "Name": "Kaesang",
+                    "Gender": "Male",
+                    "Lineage": "Both"
+                }
+            ]
+        },
+        {
+            "Name": "Mas Amba",
+            "Gender": "Male",
+            "Lineage": "Both",
+            "Spouse": {
+                "Name": "Mbak Fuad",
+                "Gender": "Female"
+            },
+            "Descendents": [
+                {
+                    "Name": "Charli Kirk",
+                    "Gender": "Male",
+                    "Lineage": "Maternal",
+                    "Spouse": {
+                        "Name" : "Edbert Eddyson Gunawan",
+                        "Gender": "Female"
+                    },
+                    "Descendents": [
+                        {
+                            "Name" : "Bahlil",
+                            "Gender": "Female",
+                            "Lineage": "Both"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Prabowo Subianto",
+            "Gender": "Male",
+            "Lineage": "Both"
+        }
+    ]
+}
