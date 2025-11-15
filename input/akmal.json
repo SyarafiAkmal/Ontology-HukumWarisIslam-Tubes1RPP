@@ -1,72 +1,86 @@
 {
-    "Name" : "Muhammad Syarafi Akmal",
-    "Gender" : "Male",
-    "Spouse": {
-        "Name": "Ibrahim Ihsan Rasyid",
-        "Gender": "Female"
+    "name": "Muhammad Syarafi Akmal",
+    "gender": "Male",
+    "status": "Dead",
+    "spouse": {
+        "name": "Ibrahim Ihsan Rasyid",
+        "gender": "Female",
+        "status": "Alive"
     },
-    "Descendents": [
+    "descendents": [
         {
-            "Name": "Megawati Akmalnoputri",
-            "Gender": "Female",
-            "Lineage": "Maternal",
-            "Spouse": {
-                "Name": "Zaki Yudistira",
-                "Gender": "Male"
+            "name": "Megawati Akmalputri",
+            "gender": "Female",
+            "status": "Alive",
+            "lineage": "Maternal",
+            "spouse": {
+                "name": "Zaki Yudistira",
+                "gender": "Male",
+                "status": "Alive"
             }
         },
         {
-            "Name": "Mulyono Widodo",
-            "Gender": "Male",
-            "Lineage": "Paternal",
-            "Spouse": {
-                "Name": "Bagas Sambega Rosyada",
-                "Gender": "Female"
+            "name": "Mulyono Widodo",
+            "gender": "Male",
+            "status": "Dead",
+            "lineage": "Paternal",
+            "spouse": {
+                "name": "Bagas Sambega Rosyada",
+                "gender": "Female",
+                "status": "Alive"
             },
-            "Descendents": [
+            "descendents": [
                 {
-                    "Name": "Gibran Rakabuming Raka",
-                    "Gender": "Male",
-                    "Lineage": "Paternal"
+                    "name": "Gibran Rakabuming Raka",
+                    "gender": "Male",
+                    "status": "Alive",
+                    "lineage": "Paternal"
                 },
                 {
-                    "Name": "Kaesang",
-                    "Gender": "Male",
-                    "Lineage": "Both"
+                    "name": "Kaesang",
+                    "gender": "Male",
+                    "status": "Alive",
+                    "lineage": "Both"
                 }
             ]
         },
         {
-            "Name": "Mas Amba",
-            "Gender": "Male",
-            "Lineage": "Both",
-            "Spouse": {
-                "Name": "Mbak Fuad",
-                "Gender": "Female"
+            "name": "Mas Amba",
+            "gender": "Male",
+            "status": "Alive",
+            "lineage": "Both",
+            "spouse": {
+                "name": "Mbak Fuad",
+                "gender": "Female",
+                "status": "Alive"
             },
-            "Descendents": [
+            "descendents": [
                 {
-                    "Name": "Charli Kirk",
-                    "Gender": "Male",
-                    "Lineage": "Maternal",
-                    "Spouse": {
-                        "Name" : "Edbert Eddyson Gunawan",
-                        "Gender": "Female"
+                    "name": "Charli Kirk",
+                    "gender": "Male",
+                    "status": "Alive",
+                    "lineage": "Maternal",
+                    "spouse": {
+                        "name" : "Edbert Eddyson Gunawan",
+                        "gender": "Female",
+                        "status": "Alive"
                     },
-                    "Descendents": [
+                    "descendents": [
                         {
-                            "Name" : "Bahlil",
-                            "Gender": "Female",
-                            "Lineage": "Both"
+                            "name" : "Bahlil",
+                            "gender": "Female",
+                            "status": "Alive",
+                            "lineage": "Both"
                         }
                     ]
                 }
             ]
         },
         {
-            "Name": "Prabowo Subianto",
-            "Gender": "Male",
-            "Lineage": "Both"
+            "name": "Prabowo Subianto",
+            "gender": "Male",
+            "status": "Alive",
+            "lineage": "Both"
         }
     ]
 }
