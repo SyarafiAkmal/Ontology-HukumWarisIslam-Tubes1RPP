@@ -1,7 +1,7 @@
 {
     "name": "Muhammad Syarafi Akmal",
     "gender": "Male",
-    "status": "Dead",
+    "status": "Alive",
     "spouse": {
         "name": "Ibrahim Ihsan Rasyid",
         "gender": "Female",
@@ -61,13 +61,13 @@
                     "status": "Alive",
                     "lineage": "Maternal",
                     "spouse": {
-                        "name" : "Edbert Eddyson Gunawan",
+                        "name": "Edbert Eddyson Gunawan",
                         "gender": "Female",
                         "status": "Alive"
                     },
                     "descendents": [
                         {
-                            "name" : "Bahlil",
+                            "name": "Bahlil",
                             "gender": "Female",
                             "status": "Alive",
                             "lineage": "Both"
