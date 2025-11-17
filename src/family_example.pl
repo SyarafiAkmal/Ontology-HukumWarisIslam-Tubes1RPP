@@ -1,9 +1,9 @@
 /* family tree */
 person(ahmed, male, alive).
-person(fatima, female, alive).
+person(fatima, female, deceased).
 person(hamzah, male, alive).
 person(khadijah, female, alive).
-person(khalid, male, alive).
+person(khalid, male, deceased).
 person(amina, female, deceased).
 
 spouse(ahmed, fatima).
