@@ -3,8 +3,8 @@
 % save_family_tree('family-tree.pl').
 :- ['calculator.pl'].
 :- ['hajb-helper.pl'].
-:- ['hajb-hirman.pl'].
-:- ['hajb-nuqsan.pl'].
+:- ['provisional-share.pl'].
+:- ['hajb.pl'].
 :- ['asabah.pl'].
 :- ['kinship.pl'].
 :- ['family-tree.pl'].
