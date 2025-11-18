@@ -5,7 +5,8 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:hukumwaris="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris"/>
     
 
@@ -398,6 +399,67 @@
     <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Wife">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Spouses"/>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Charli_Kirk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Charli_Kirk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Son_Son"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Gibran_Rakabuming_Raka -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Gibran_Rakabuming_Raka">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Son_Son"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Kaesang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Kaesang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Son_Son"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Mas_Amba -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Mas_Amba">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Son"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Megawati_Akmalputri -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Megawati_Akmalputri">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Daughter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Mulyono_Widodo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Mulyono_Widodo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Son"/>
+        <hukumwaris:Portion>&quot;2/3T, if have sister&quot;</hukumwaris:Portion>
+        <hukumwaris:Portion>T, if dont have sister</hukumwaris:Portion>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
