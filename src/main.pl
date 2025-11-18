@@ -17,7 +17,6 @@ calculate_inheritance(DeceasedName, HeirName, FinalShareString) :-
     findall(Type, 
             living_relative_type(DeceasedID, Type), 
             HeirsList),
-    write('Heirs List: '), write(HeirsList), nl,
             
     living_relative_type(DeceasedID, HeirID, HeirType),
     
@@ -41,16 +40,13 @@ calculate_shares(HeirType, DeceasedID, HeirsList, FinalShare) :-
               get_provisional_share(Type, HeirsList, Share)
             ),
             ProvisionalShares),
-    write('Provisional Shares: '), write(ProvisionalShares), nl,
 
     separate_shares_asabah(ProvisionalShares, FixedSharePairs, AsabahList),
 
     findall(Share, member(_-Share, FixedSharePairs), ShareValues),
     frac_sum_list(ShareValues, TotalFixedShare),
-    write('Total Fixed Share: '), write(TotalFixedShare), nl,
     
     frac_subtract(1/1, TotalFixedShare, Remainder),
-    write('Remainder: '), write(Remainder), nl,
 
     distribute_remainder(Remainder, FixedSharePairs, AsabahList, TotalFixedShare, FinalShareList),
 
