@@ -56,13 +56,14 @@ calculate_shares(HeirType, DeceasedID, HeirsList, FinalShare) :-
     % 3. Sum the fixed shares
     findall(Share, member(_-Share, FixedSharePairs), ShareValues),
     frac_sum_list(ShareValues, TotalFixedShare),
+    write('Total Fixed Share: '), write(TotalFixedShare), nl,
     
     % 4. Calculate Remainder
     frac_subtract(1/1, TotalFixedShare, Remainder),
+    write('Remainder: '), write(Remainder), nl,
 
     % 5. Distribute Remainder (handles Aul, Radd, and Asabah)
-    distribute_remainder(Remainder, FixedSharePairs, AsabahList, FinalShareList),
-    write('Final Shares: '), write(FinalShareList), nl,
+    distribute_remainder(Remainder, FixedSharePairs, AsabahList, TotalFixedShare, FinalShareList),
 
     % 6. Look up the queried heirs final share
     ( member(HeirType-FinalShare, FinalShareList)
@@ -70,19 +71,19 @@ calculate_shares(HeirType, DeceasedID, HeirsList, FinalShare) :-
     ).
 
 % This is the 3-way logical branch that controls the calculation
-distribute_remainder(Rem, Fixed, Asabah, Final) :-
+distribute_remainder(Rem, Fixed, Asabah, _, Final) :-
     frac_compare(Rem, '>', 0/1), \+ Asabah = [],!,
     handle_asabah(Rem, Fixed, Asabah, Final).
     
-distribute_remainder(Rem, Fixed, _, Final) :-
+distribute_remainder(Rem, Fixed, _, _, Final) :-
     frac_compare(Rem, '>', 0/1),!,                 % Case 2: Remainder > 0, NO Asabah
     handle_radd(Rem, Fixed, Final).
     
-distribute_remainder(Rem, Fixed, _, Final) :-
+distribute_remainder(Rem, Fixed, _, TotalFixedShare, Final) :-
     frac_compare(Rem, '<', 0/1),!,                 % Case 3: Remainder < 0 (Deficit)
     handle_aul(Fixed, TotalFixedShare, Final). % Need TotalFixedShare here
     
-distribute_remainder(0/1, Fixed, _, Fixed) :-!.    % Case 4: Remainder is exactly 0
+distribute_remainder(0/1, Fixed, _, _, Fixed) :-!.    % Case 4: Remainder is exactly 0
 
 % (Helper: separate_shares_asabah/3 must be implemented to parse
 %  the ProvisionalShares list, splitting 'asabah' and '1/6 + asabah'

@@ -1,7 +1,5 @@
 % --- BEGIN Kinship Predicates Library ---
 
-:- initialization(consult('family-tree.pl')).
-
 % Base relationships (facts + gender/aliveness checks)
 father(Child, Father) :-
     parent_of(Child, Father),
@@ -52,6 +50,16 @@ maternal_sibling_of(P1, P2) :-
     F1 \== F2,
     P1 \== P2.
 
+full_uncle_paternal(Uncle, NieceNephew) :-
+    (full_sibling_of(Uncle, Parent),
+    person(Parent, _, male, _),
+    parent_of(Parent, NieceNephew)
+    ;
+    husband(Aunt, Uncle),
+    full_sibling_of(Parent, Aunt),
+    parent_of(Parent, NieceNephew)
+    ).
+
 % Recursive relationships [47, 54]
 % Anc is an ancestor of Desc if Anc is a parent of Desc (base case)
 ancestor_of(Anc, Desc) :-
@@ -97,9 +105,35 @@ living_relative_type(DeceasedID, HeirID, daughter) :-
     person(HeirID, _, female, true),
     parent_of(HeirID, DeceasedID).
 
-living_relative_type(DeceasedID, HeirID, grandson) :-
+living_relative_type(DeceasedID, HeirID, grandfather_paternal) :-
+    person(HeirID, _, male, true),
+    parent_of(DeceasedID, ParentID),
+    person(ParentID, _, male, false), % Through deceased father
+    parent_of(ParentID, HeirID).
+
+living_relative_type(DeceasedID, HeirID, grandmother_maternal) :-
+    person(HeirID, _, female, true),
+    parent_of(DeceasedID, ParentID),
+    person(ParentID, _, female, false), % Through deceased mother
+    parent_of(ParentID, HeirID).
+
+living_relative_type(DeceasedID, HeirID, grandmother_paternal) :-
+    person(HeirID, _, female, true),
+    parent_of(DeceasedID, ParentID),
+    person(ParentID, _, male, false), % Through deceased father
+    parent_of(ParentID, HeirID).
+
+living_relative_type(DeceasedID, HeirID, grandson_son) :-
     person(HeirID, _, male, true),
     parent_of(HeirID, ParentID),
+    person(ParentID, _, male, false),
+    parent_of(ParentID, DeceasedID),
+    person(ParentID, _, male, false). % Through deceased son
+
+living_relative_type(DeceasedID, HeirID, granddaughter_son) :-
+    person(HeirID, _, female, true),
+    parent_of(HeirID, ParentID),
+    person(ParentID, _, male, false),
     parent_of(ParentID, DeceasedID),
     person(ParentID, _, male, false). % Through deceased son
 
@@ -111,13 +145,51 @@ living_relative_type(DeceasedID, HeirID, full_sister) :-
     person(HeirID, _, female, true),
     full_sibling(DeceasedID, HeirID).
 
+living_relative_type(DeceasedID, HeirID, maternal_sister) :-
+    person(HeirID, _, female, true),
+    maternal_sibling(DeceasedID, HeirID).
+
+living_relative_type(DeceasedID, HeirID, maternal_brother) :-
+    person(HeirID, _, male, true),
+    maternal_sibling(DeceasedID, HeirID).
+
+living_relative_type(DeceasedID, HeirID, full_brothers_son) :-
+    person(HeirID, _, male, true),
+    full_sibling(DeceasedID, SiblingID),
+    parent_of(HeirID, SiblingID).
+
+living_relative_type(DeceasedID, HeirID, paternal_sister) :-
+    person(HeirID, _, female, true),
+    paternal_sibling(DeceasedID, HeirID).
+
 living_relative_type(DeceasedID, HeirID, paternal_brother) :-
     person(HeirID, _, male, true),
     paternal_sibling(DeceasedID, HeirID).
 
-living_relative_type(DeceasedID, HeirID, maternal_sister) :-
-    person(HeirID, _, female, true),
-    maternal_sibling(DeceasedID, HeirID).
+living_relative_type(DeceasedID, HeirID, paternal_brothers_son) :-
+    person(HeirID, _, male, true),
+    paternal_sibling(DeceasedID, SiblingID),
+    parent_of(HeirID, SiblingID).
+
+living_relative_type(DeceasedID, HeirID, full_uncle_paternal) :-
+    person(HeirID, _, male, true),
+    full_uncle_paternal(HeirID, DeceasedID).
+
+living_relative_type(DeceasedID, HeirID, fathers_paternal_brother) :-
+    person(HeirID, _, male, true),
+    parent_of(DeceasedID, FatherID),
+    paternal_sibling(FatherID, HeirID).
+
+living_relative_type(DeceasedID, HeirID, full_paternal_uncles_son) :-
+    person(HeirID, _, male, true),
+    full_uncle_paternal(UncleID, DeceasedID),
+    parent_of(HeirID, UncleID).
+
+living_relative_type(DeceasedID, HeirID, fathers_paternal_brothers_son) :-
+    person(HeirID, _, male, true),
+    parent_of(DeceasedID, FatherID),
+    paternal_sibling(FatherID, UncleID),
+    parent_of(HeirID, UncleID).
 
 % Helper: full siblings share both parents
 full_sibling(Person1, Person2) :-

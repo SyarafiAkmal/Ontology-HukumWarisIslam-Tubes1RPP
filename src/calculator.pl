@@ -8,6 +8,10 @@ gcd(A, B, G) :-
     R is A mod B,
     gcd(B, R, G).
 
+lcm(A, B, LCM) :-
+    gcd(A, B, G),
+    LCM is (A * B) // G.
+
 % simplify_fraction(N/D, NumSimplified/DenSimplified)
 % Simplifies a fraction to its lowest terms.
 simplify_fraction(N/D, NS/DS) :-
@@ -17,15 +21,13 @@ simplify_fraction(N/D, NS/DS) :-
 
 % frac_add(Frac1, Frac2, Sum)
 % Adds two fractions and simplifies the result.
-frac_add(N1/D, N2/D, NS/D_Simp) :-!, % Same denominator
-    N_Sum is N1 + N2,
-    simplify_fraction(N_Sum/D, NS/D_Simp).
+frac_add(N1/D, N2/D, NS/D) :-!, % Same denominator
+    NS is N1 + N2.
 frac_add(N1/D1, N2/D2, NS/DS) :- % Different denominators
-    NewN1 is N1 * D2,
-    NewN2 is N2 * D1,
-    NewD is D1 * D2,
-    NewN is NewN1 + NewN2,
-    simplify_fraction(NewN/NewD, NS/DS).
+    DS is lcm(D1, D2),
+    NewN1 is N1 * (DS / D1),
+    NewN2 is N2 * (DS / D2),
+    NS is NewN1 + NewN2.
 
 % frac_subtract(Frac1, Frac2, Difference)
 % Subtracts Frac2 from Frac1.
