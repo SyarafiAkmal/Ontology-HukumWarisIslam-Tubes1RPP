@@ -124,6 +124,12 @@ process_spouse(PersonID, SpouseNode) :-
     -> true
     ; assertz(person(SpouseID, SpouseName, Gender, IsAlive))
     ),
+
+    % Handle spouses parents if present
+    ( get_dict(parents, SpouseNode, ParentsDict)
+    -> process_parents(SpouseID, ParentsDict)
+    ; true
+    ),
     
     % Assert marriage (avoid duplicates)
     ( married(PersonID, SpouseID) -> true

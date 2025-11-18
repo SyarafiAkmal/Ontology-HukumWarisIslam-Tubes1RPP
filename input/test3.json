@@ -1,0 +1,58 @@
+{
+    "name": "Jupri",
+    "gender": "Male",
+    "status": "Dead",
+    "spouse": {
+        "name": "Siti",
+        "gender": "Female",
+        "status": "Alive"
+    },
+    "descendents": [
+        {
+            "name": "Paijo",
+            "gender": "Male",
+            "status": "Dead",
+            "spouse": {
+                "name": "Sri",
+                "gender": "Female",
+                "status": "Alive",
+                "parents": {
+                    "father": {
+                        "name": "Sukirman",
+                        "gender": "Male",
+                        "status": "Alive"
+                    },
+                    "mother": {
+                        "name": "Lasmi",
+                        "gender": "Female",
+                        "status": "Alive"
+                    }
+                }
+            },
+            "descendents": [
+                {
+                    "name": "Sumantri",
+                    "gender": "Male",
+                    "status": "Dead",
+                    "descendents": [
+                        {
+                            "name": "Paimin",
+                            "gender": "Male",
+                            "status": "Alive"
+                        }
+                    ]
+                },
+                {
+                    "name": "Sulastri",
+                    "gender": "Female",
+                    "status": "Alive"
+                },
+                {
+                    "name": "Sumarni",
+                    "gender": "Female",
+                    "status": "Alive"
+                }
+            ]
+        }
+    ]
+}

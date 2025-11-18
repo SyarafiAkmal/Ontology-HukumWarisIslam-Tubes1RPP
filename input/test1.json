@@ -1,0 +1,34 @@
+{
+    "name": "Betta",
+    "gender": "Male",
+    "status": "Dead",
+    "spouse": {
+        "name": "Rina",
+        "gender": "Female",
+        "status": "Alive"
+    },
+    "descendents": [
+        {
+            "name": "Aldi",
+            "gender": "Male",
+            "status": "Dead",
+            "spouse": {
+                "name": "Wati",
+                "gender": "Female",
+                "status": "Dead"
+            },
+            "descendents": [
+                {
+                    "name": "Devi",
+                    "gender": "Female",
+                    "status": "Alive"
+                },
+                {
+                    "name": "Lia",
+                    "gender": "Female",
+                    "status": "Alive"
+                }
+            ]
+        }
+    ]
+}
