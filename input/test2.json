@@ -1,0 +1,68 @@
+{
+    "name": "Prabowo",
+    "gender": "Male",
+    "status": "Dead",
+    "spouse": {
+        "name": "Titiek",
+        "gender": "Female",
+        "status": "Alive"
+    },
+    "descendents": [
+        {
+            "name": "Jokowi",
+            "gender": "Male",
+            "status": "Dead",
+            "spouse": {
+                "name": "Iriana",
+                "gender": "Female",
+                "status": "Dead",
+                "parents": {
+                    "father": {
+                        "name": "Bedjo",
+                        "gender": "Male",
+                        "status": "Dead"
+                    },
+                    "mother": {
+                        "name": "Beti",
+                        "gender": "Female",
+                        "status": "Alive"
+                    }
+                }
+            },
+            "descendents": [
+                {
+                    "name": "Kahiyang",
+                    "gender": "Female",
+                    "status": "Dead",
+                    "spouse": {
+                        "name": "Bobby",
+                        "gender": "Male",
+                        "status": "Alive",
+                        "parents": {
+                            "father": {
+                                "name": "Luhut",
+                                "gender": "Male",
+                                "status": "Dead"
+                            },
+                            "mother": {
+                                "name": "Megawati",
+                                "gender": "Female",
+                                "status": "Dead"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Puan",
+            "gender": "Female",
+            "status": "Alive"
+        },
+        {
+            "name": "Tsamara",
+            "gender": "Female",
+            "status": "Alive"
+        }
+    ]
+}

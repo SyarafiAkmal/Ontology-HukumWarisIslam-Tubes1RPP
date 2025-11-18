@@ -1,0 +1,20 @@
+--- Test Case 1 ---
+
+calculate_inheritance(aldi, rina, Share). -> 1/5
+calculate_inheritance(aldi, devi, Share). -> 2/5
+calculate_inheritance(aldi, lia, Share). -> 2/5
+
+--- Test Case 2 ---
+
+calculate_inheritance(kahiyang, bobby, Share). -> 1/2
+calculate_inheritance(kahiyang, beti, Share). -> 1/4
+calculate_inheritance(kahiyang, titiek, Share). -> 1/4
+calculate_inheritance(kahiyang, puan, Share). -> 0/1
+
+--- Test Case 3 ---
+
+calculate_inheritance(paijo, siti, Share). -> 21/120
+calculate_inheritance(paijo, sri, Share). -> 1/8
+calculate_inheritance(paijo, sulastri, Share). -> 21/60
+calculate_inheritance(paijo, sumarni, Share). -> 21/60
+calculate_inheritance(paijo, paimin, Share). -> 0/1
