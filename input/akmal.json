@@ -1,7 +1,7 @@
 {
     "name": "Ali",
     "gender": "Male",
-    "status": "Dead",
+    "status": "Alive",
     "spouse": {
         "name": "Amina",
         "gender": "Female",

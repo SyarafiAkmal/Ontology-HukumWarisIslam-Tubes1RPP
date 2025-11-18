@@ -1,0 +1,468 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris/"
+     xml:base="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:hukumwaris="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Daughter_Blocks -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Daughter_Blocks">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Daughter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Maternal_Siblings"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Father_Blocks -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Father_Blocks">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Father"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Full_Brother"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Full_Sister"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Maternal_Siblings"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Paternal_Grandfather"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Father_Paternal_Brother -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Father_Paternal_Brother">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Father_Paternal_Brother"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Father_Paternal_Brother_Son"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Father_Paternal_Brother_Blocks -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Father_Paternal_Brother_Blocks">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Father_Paternal_Brother"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Paternal_Uncle_Son"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Full_Brother_Blocks -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Full_Brother_Blocks">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Full_Brother"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Full_Brother_Son"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Paternal_Sister"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Full_Brother_Son_Blocks -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Full_Brother_Son_Blocks">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Full_Brother_Son"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Paternal_Brother"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Mother_Blocks -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Mother_Blocks">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Mother"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Maternal_Grandmother"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Paternal_Grandmother"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Paternal_Brother_Blocks -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Paternal_Brother_Blocks">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Paternal_Brother"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Paternal_Brother_Son"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Paternal_Brother_Son_Blocks -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Paternal_Brother_Son_Blocks">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Paternal_Brother_Son"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Paternal_Uncle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Paternal_Uncle_Blocks -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Paternal_Uncle_Blocks">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Paternal_Uncle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Father_Paternal_Brother"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Paternal_Uncle_Son_Blocks -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Paternal_Uncle_Son_Blocks">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Paternal_Uncle_Son"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Father_Paternal_Brother_Son"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Son_Blocks -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Son_Blocks">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Son"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Maternal_Siblings"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Son_Daughter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Son_Son"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Son_Daughter_Blocks -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Son_Daughter_Blocks">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Son_Daughter"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Maternal_Siblings"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Son_Son_Blocks -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Son_Son_Blocks">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Son_Son"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Full_Brother"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Full_Sister"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Maternal_Siblings"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Portion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Portion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Inheritors"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Ascendants -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Ascendants">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Inheritors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Daughter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Daughter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Descendants"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Descendants -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Descendants">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Inheritors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Father -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Father">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Ascendants"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Father_Paternal_Brother -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Father_Paternal_Brother">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Footnotes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Father_Paternal_Brother_Son -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Father_Paternal_Brother_Son">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Footnotes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Footnotes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Footnotes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Inheritors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Full_Brother -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Full_Brother">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Footnotes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Full_Brother_Son -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Full_Brother_Son">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Footnotes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Full_Sister -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Full_Sister">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Footnotes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Husband -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Husband">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Spouses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Inheritors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Inheritors"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Maternal_Grandmother -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Maternal_Grandmother">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Ascendants"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Maternal_Siblings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Maternal_Siblings">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Footnotes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Mother -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Mother">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Ascendants"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Paternal_Brother -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Paternal_Brother">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Footnotes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Paternal_Brother_Son -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Paternal_Brother_Son">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Footnotes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Paternal_Grandfather -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Paternal_Grandfather">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Ascendants"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Paternal_Grandmother -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Paternal_Grandmother">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Ascendants"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Paternal_Sister -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Paternal_Sister">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Footnotes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Paternal_Uncle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Paternal_Uncle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Footnotes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Paternal_Uncle_Son -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Paternal_Uncle_Son">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Footnotes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Son -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Son">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Descendants"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Son_Daughter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Son_Daughter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Descendants"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Son_Son -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Son_Son">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Descendants"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Spouses -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Spouses">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Inheritors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Wife -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Wife">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Spouses"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Charli_Kirk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Charli_Kirk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Son_Son"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Gibran_Rakabuming_Raka -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Gibran_Rakabuming_Raka">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Son_Son"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Kaesang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Kaesang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Son_Son"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Mas_Amba -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Mas_Amba">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Son"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Megawati_Akmalputri -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Megawati_Akmalputri">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Daughter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Mulyono_Widodo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Mulyono_Widodo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2025/10/hukumwaris#Son"/>
+        <hukumwaris:Portion>&quot;2/3T, if have sister&quot;</hukumwaris:Portion>
+        <hukumwaris:Portion>T, if dont have sister</hukumwaris:Portion>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
