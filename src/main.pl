@@ -1,15 +1,15 @@
 % --- BEGIN Top-Level Predicates ---
 
-:- initialization(load_files).
-
-load_files :-
-    consult('family-tree.pl'),
-    consult('calculator.pl'),
-    consult('hajb-helper.pl'),
-    consult('hajb-hirman.pl'),
-    consult('hajb-nuqsan.pl'),
-    consult('asabah.pl'),
-    consult('kinship.pl').
+% ['parser.pl'].
+% parse_family_tree('../input/akmal.json').
+% save_family_tree('family-tree.pl').
+:- ['calculator.pl'].
+:- ['hajb-helper.pl'].
+:- ['hajb-hirman.pl'].
+:- ['hajb-nuqsan.pl'].
+:- ['asabah.pl'].
+:- ['kinship.pl'].
+:- ['family-tree.pl'].
 
 % Main entry point for user query
 calculate_inheritance(DeceasedName, HeirName, FinalShareString) :-

@@ -1,86 +1,167 @@
 {
-    "name": "Muhammad Syarafi Akmal",
+    "name": "Ali",
     "gender": "Male",
     "status": "Dead",
     "spouse": {
-        "name": "Ibrahim Ihsan Rasyid",
+        "name": "Amina",
         "gender": "Female",
-        "status": "Alive"
+        "status": "Dead"
     },
     "descendents": [
         {
-            "name": "Megawati Akmalputri",
-            "gender": "Female",
-            "status": "Alive",
-            "lineage": "Maternal",
-            "spouse": {
-                "name": "Zaki Yudistira",
-                "gender": "Male",
-                "status": "Alive"
-            }
-        },
-        {
-            "name": "Mulyono Widodo",
+            "name": "Umar",
             "gender": "Male",
             "status": "Dead",
-            "lineage": "Paternal",
             "spouse": {
-                "name": "Bagas Sambega Rosyada",
+                "name": "Khadija",
                 "gender": "Female",
-                "status": "Alive"
-            },
-            "descendents": [
-                {
-                    "name": "Gibran Rakabuming Raka",
-                    "gender": "Male",
-                    "status": "Alive",
-                    "lineage": "Paternal"
-                },
-                {
-                    "name": "Kaesang",
-                    "gender": "Male",
-                    "status": "Alive",
-                    "lineage": "Both"
-                }
-            ]
-        },
-        {
-            "name": "Mas Amba",
-            "gender": "Male",
-            "status": "Alive",
-            "lineage": "Both",
-            "spouse": {
-                "name": "Mbak Fuad",
-                "gender": "Female",
-                "status": "Alive"
-            },
-            "descendents": [
-                {
-                    "name": "Charli Kirk",
-                    "gender": "Male",
-                    "status": "Alive",
-                    "lineage": "Maternal",
-                    "spouse": {
-                        "name" : "Edbert Eddyson Gunawan",
+                "status": "Alive",
+                "parents": {
+                    "father": {
+                        "name": "Bakr",
+                        "gender": "Male",
+                        "status": "Dead"
+                    },
+                    "mother": {
+                        "name": "Basma",
                         "gender": "Female",
-                        "status": "Alive"
+                        "status": "Dead"
+                    }
+                }
+            },
+            "descendents": [
+                {
+                    "name": "Zayd",
+                    "gender": "Male",
+                    "status": "Dead",
+                    "spouse": {
+                        "name": "Ayesha",
+                        "gender": "Female",
+                        "status": "Alive",
+                        "parents": {
+                            "father": {
+                                "name": "Abdullah",
+                                "gender": "Male",
+                                "status": "Dead",
+                                "parents": {
+                                    "father": {
+                                        "name": "Hassan",
+                                        "gender": "Male",
+                                        "status": "Dead"
+                                    },
+                                    "mother": {
+                                        "name": "Layla",
+                                        "gender": "Female",
+                                        "status": "Dead"
+                                    }
+                                }
+                            },
+                            "mother": {
+                                "name": "Zainab Mother",
+                                "gender": "Female",
+                                "status": "Dead",
+                                "parents": {
+                                    "father": {
+                                        "name": "Omar",
+                                        "gender": "Male",
+                                        "status": "Dead"
+                                    },
+                                    "mother": {
+                                        "name": "Sarah",
+                                        "gender": "Female",
+                                        "status": "Dead"
+                                    }
+                                }
+                            }
+                        }
                     },
                     "descendents": [
                         {
-                            "name" : "Bahlil",
+                            "name": "Ibrahim",
+                            "gender": "Male",
+                            "status": "Dead",
+                            "spouse": {
+                                "name": "Zaynab",
+                                "gender": "Female",
+                                "status": "Dead",
+                                "parents": {
+                                    "father": {
+                                        "name": "Zaynab Father",
+                                        "gender": "Male",
+                                        "status": "Dead"
+                                    },
+                                    "mother": {
+                                        "name": "Zaynab Mother",
+                                        "gender": "Female",
+                                        "status": "Dead"
+                                    }
+                                }
+                            },
+                            "descendents": [
+                                {
+                                    "name": "Bagas",
+                                    "gender": "Male",
+                                    "status": "Dead"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Maryam",
                             "gender": "Female",
-                            "status": "Alive",
-                            "lineage": "Both"
+                            "status": "Alive"
+                        },
+                        {
+                            "name": "Mega",
+                            "gender": "Female",
+                            "status": "Dead"
+                        },
+                        {
+                            "name": "Musab",
+                            "gender": "Male",
+                            "status": "Dead",
+                            "spouse": {
+                                "name": "Aisha",
+                                "gender": "Female",
+                                "status": "Alive",
+                                "parents": {
+                                    "father": {
+                                        "name": "Aisha Father",
+                                        "gender": "Male",
+                                        "status": "Dead"
+                                    },
+                                    "mother": {
+                                        "name": "Aisha Mother",
+                                        "gender": "Female",
+                                        "status": "Dead"
+                                    }
+                                }
+                            },
+                            "descendents": [
+                                {
+                                    "name": "Yusuf",
+                                    "gender": "Male",
+                                    "status": "Dead"
+                                }
+                            ]
                         }
                     ]
+                },
+                {
+                    "name": "Fatima",
+                    "gender": "Female",
+                    "status": "Dead"
+                },
+                {
+                    "name": "Puan",
+                    "gender": "Female",
+                    "status": "Dead"
                 }
             ]
         },
         {
-            "name": "Prabowo Subianto",
+            "name": "Usman",
             "gender": "Male",
-            "status": "Alive",
-            "lineage": "Both"
+            "status": "Dead"
         }
     ]
 }
